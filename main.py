@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 from PIL import Image
  
-logo = Image.open('imagem2.jpg')
+logo = Image.open('Imagem2.jpg')
 st.image(logo)
 
 st.title('ConteAlgas')
