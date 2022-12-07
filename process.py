@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import cv2
 
 def carregar_imagem(imagem, st = False):
@@ -54,11 +53,6 @@ def contar_celulas(imagem_original, imagem_filtrada, blur=13, low_limit=30, up_l
       num_celulas = len(cnt)
     else:
       cnt = 0
-
-    if plot:
-      imagem_final = cv2.cvtColor(imagem_original, cv2.COLOR_BGR2RGB)
-      plt.imshow(imagem_final)
-      plt.show()
 
   
     return num_celulas
